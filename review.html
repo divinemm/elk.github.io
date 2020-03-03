@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <link rel="stylesheet" href="styles.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <style media="screen">
+            button {
+              align-items: flex-start;
+            }
+
+            .container{
+              flex-wrap: nowrap
+            }
+          </style>
+          <title>Review</title>
+     </head>
+     <body>
+
+       <div class="pos-f-t">
+         <div class="collapse" id="navbarToggleExternalContent">
+           <div class="bg-dark p-4">
+             <ul class="navbar-nav nav nav-fill w-100">
+               <li class="nav-item">
+                 <a class="nav-link link-odd" href="index.html" id="top-button">Profile</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link link-even" href="review.html">Write a Review</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link link-odd" href="notifications.html">Notifications</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link link-even" href="login.html" id="bottom-button">Sign Out</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+         <nav class="navbar navbar-dark bg-dark static-top">
+           <div>
+             <div class="links-hamburger">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             </div>
+             <div class="search-box">
+               <form class="form-inline">
+                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-success my-2 my-sm-0 search-button" type="submit">Search</button>
+               </form>
+             </div>
+           </div>
+           <div class="review-button-div">
+             <a href="review.html" target="_self" style="color:#FFF">
+             <button type="button" class="btn btn-info" name="button-review">
+             Write a Review</button>
+             </a>
+           </div>
+         </nav>
+       </div> <!--end navigation-->
+
+
+     <div class="col-sm my-4">
+
+     <ol>
+          <li class="my-5">Location
+          <select class="form-control form-control-lg" for="focused-input">
+               <option>Select Location</option>
+               <option value="">Virginia</option>
+               <option value="">Tennessee</option>
+               <option value="">Ohio</option>
+          </select>
+          <p class="my-2">OR Add a new location:</p>
+          <input class="form-control input-lg" type="text" name="new_location" placeholder="Type here">
+          </li>
+
+
+      <!--    <li>
+               <form class="form">
+                    <p>About how long did it take to load/unload?</p>
+                    <div class="form-check form-check-inline mx-2">
+                      <input class="form-check-input" type="radio" name="load" id="Radios1" value="option1">
+                      <label class="form-check-label radio-inline" for="Radios1">&lt; 1 hour
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mx-2">
+                      <input class="form-check-input" type="radio" name="load" id="Radios2" value="option2">
+                      <label class="form-check-label radio-inline" for="Radios2">1 hour
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mx-2">
+                      <input class="form-check-input" type="radio" name="load" id="Radios3" value="option3">
+                      <label class="form-check-label radio-inline" for="Radios3">2 hours
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mx-2">
+                      <input class="form-check-input" type="radio" name="load" id="Radios4" value="option4">
+                      <label class="form-check-label radio-inline" for="Radios4">3 hours
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mx-2">
+                      <input class="form-check-input" type="radio" name="load" id="Radios5" value="option5">
+                      <label class="form-check-label radio-inline" for="Radios5">3+ hours
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline mx-2">
+                      <input class="form-check-input" type="radio" name="load" id="Radios6" value="option6">
+                      <label for="focused-input">Other:</label>
+                      <input class="form-control input-lg" type="text" name="other_reason" placeholder="Type here"/>
+                    </div>
+               </form>
+          </li> -->
+
+          <li class="my-5">
+               <p>First come, first served OR by appointment?</p>
+               <div class="form-check my-2">
+                 <input class="form-check-input" type="radio" name="arrival" id="Radios7" value="option1">
+                 <label class="form-check-label" for="Radios6">
+                      First come, first served
+                 </label>
+               </div>
+               <div class="form-check my-2">
+                 <input class="form-check-input" type="radio" name="arrival" id="Radios8" value="option2">
+                 <label class="form-check-label" for="focused-input">
+                      By appointment.
+                      Time of appointment?
+                 </label>
+                 <input class="form-control input-lg" type="text" name="Appointment_time" placeholder="Type here">
+               </div>
+               <div class="form-check my-2">
+                 <input class="form-check-input" type="radio" name="arrival" id="Radios9" value="option3">
+                 <label class="form-check-label" for="Radios8">
+                      Either
+                 </label>
+               </div>
+               <div class="form-check my-2">
+                 <input class="form-check-input" type="radio" name="arrival" id="Radios10" value="option4">
+                 <label class="form-check-label" for="Radios9">
+                      N/A
+                 </label>
+               </div>
+               <!--<div>
+                    <input onclick="document.getElementById('time').disabled = false; document.getElementById('charstype').disabled = true;" type="radio" name="type">By appointment
+                    <p>What time was your appointment?</p>
+                    <input class="form-control" type="text" name="time" id="time" placeholder="Time" for="focused-input"> -->
+          </li>
+
+          <li class="my-5">
+            <p>Times:</p>
+            <div class="form-check">
+              <label for="focused-input">Arrival: </label>
+              <input class="form-control input-lg" type="text" name="arrival" placeholder="Type here"/>
+              <label for="focused-input">Start: </label>
+              <input class="form-control input-lg" type="text" name="start" placeholder="Type here"/>
+              <label for="focused-input">Finish: </label>
+              <input class="form-control input-lg" type="text" name="finish" placeholder="Type here"/>
+              <label for="focused-input">Departure: </label>
+              <input class="form-control input-lg" type="text" name="departure" placeholder="Type here"/>
+            </div>
+          </li>
+
+          <li class="my-5">
+            <p>How would you rate the staff?</p>
+            <div class="form-group form-check">
+              <label class="radio mx-2">
+                <input type="radio" name="staff" id="Radios11" value="verypoor">Very Poor
+              </label>
+              <label class="radio mx-2">
+                <input type="radio" name="staff" id="Radios12" value="poor">Poor
+              </label>
+              <label class="radio mx-2">
+                <input type="radio" name="staff" id="Radios13" value="neutral">Neutral
+              </label>
+              <label class="radio mx-2">
+                <input type="radio" name="staff" id="Radios14" value="good">Good
+              </label>
+              <label class="radio mx-2">
+                <input type="radio" name="staff" id="Radios15" value="verygood">Very Good
+              </label>
+            </div>
+          </li>
+
+          <li class="my-5">
+            <p>Were there any other drivers waiting when you arrived?</p>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="wait" id="Radios16"value="yes">Yes
+            </div>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="wait" id="Radios17" value="no">No
+            </div>
+          </li>
+
+          <li class="my-5">
+            <p>How much space did you have?</p>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="space" id="Radio18" value="belowaverage">Below average
+            </div>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="space" id="Radio19" value="average">Average
+            </div>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="space" id="Radio20" value="aboveaverage">Above average
+            </div>
+          </li>
+
+          <li class="my-5">
+              <p>Check off all that apply:</p>
+              <form class="" action="index.html" method="post">
+
+              </form>
+              <div class="custom-control custom-checkbox my-2">
+                  <input type="checkbox" class="custom-control-input" name="check" id="unchecked1">
+                  <label class="custom-control-label" for="unchecked1">Overnight Parking</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2">
+                <input type="checkbox" class="custom-control-input" name="check" id="unchecked2">
+                <label class="custom-control-label" for="unchecked2">Driver Break Room</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2">
+                  <input type="checkbox" class="custom-control-input" name="check" id="unchecked3">
+                  <label class="custom-control-label" for="unchecked3">Restrooms</label>
+              </div>
+              <div class="custom-control custom-checkbox my-2">
+                  <input type="checkbox" class="custom-control-input" name="check" id="unchecked4">
+                  <label class="custom-control-label" for="unchecked4">First come, first served</label>
+              </div>
+
+          </li>
+
+          <li class="my-5">
+            <p>Was this for a broker? If so, type their name.</p>
+            <form class="form">
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="broker" id="Radios21"value="yes">Yes
+            <input class="form-control input-lg" type="text" name="other_reason" placeholder="Type here"/>
+          </div>
+            <div class="form-check my-2">
+              <input class="form-check-input" type="radio" name="broker" id="Radios22" value="no">No
+            </div>
+            </form>
+          </li>
+          <li>
+            <p>Rate your overall experience:</p>
+            <form class="form">
+
+            </form>
+          </li>
+
+          <li class="my-5">
+            <div class="card my-4" style="width: 16rem;"> <!--card-->
+              <div class="card-header">
+                <p class="card-title">Upload a photo:</p>
+              </div>
+              <img class="card-img-top" src="" alt="Take photo">
+              <div class="card-body">
+              </div>
+            </div><!--end card-->
+          </li>
+
+          <li class="my-5">
+            <p>Any additional comments?</p>
+            <input class="form-control input-lg" type="text" name="comments" placeholder="Type here"/>
+          </li>
+     </ol>
+     </div>
+
+     </div>
+     <div class="mx-4">
+       <a href="submit.html" target="_self" style="color:#FFF">
+         <button type="button" class="btn btn-success" name="button-review">Submit</button>
+       </a>
+     </div>
+
+     <footer class="page-footer fixed">
+       <!-- Footer Links -->
+         <div class="container text-sm-center">
+           <div class="row">
+             <div class="col-sm">
+               <h5 class="text-uppercase mt-4">Links</h5>
+               <ul class="list-unstyled">
+                 <li>
+                   <a href="#!">Terms & Conditions</a>
+                 </li>
+                 <li>
+                   <a href="#!">Privacy Policy</a>
+                 </li>
+                 <li>
+                   <a href="#!">Link</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         <div class="col-sm">
+           <div class="footer-copyright text-center py-2 text-bottom">© 2020 Copyright:
+             Road Stop
+           </div>
+         </div>
+     </div> <!--container-->
+     </footer>
+
+     </body>
+</html>

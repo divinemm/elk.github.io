@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <style media="screen">
+      button {
+        align-items: flex-start;
+      }
+      .container{
+        flex-wrap: nowrap;
+      }
+      body {
+          background-image: url('truck-bg.jpg');
+          background-size: cover;
+          background-attachment: fixed;
+      }
+    </style>
+    <title>Driver Sign In</title>
+  </head>
+  <body>
+
+    <div class="row my-4 mx-4">
+      <div class="col-sm text-center">
+        <img src="logo_Final.png" height="130rem" alt="Road Stop Logo">
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm text-center d-flex justify-content-center">
+
+    <div class="card my-4 mx-4" style="width: 18rem;"> <!--card-->
+      <div class="card-header">
+        <h3 class="card-title">Driver Sign In</h3>
+      </div>
+      <div class="card-body">
+        <form>
+          <input class="form-control input-lg my-4" type="text" name="user_driver" placeholder="Username">
+          <input class="form-control input-lg" type="text" name="pass_driver" placeholder="Password" aria-describedby="passwordHelpInline">
+          <a href="#.html">
+          <small id="passwordHelpBlock" class="form-text text-muted text-right">Forgot Password?</small>
+          </a>
+
+          <a href="index.html" target="_self" style="color:#FFF">
+            <button type="button" class="btn btn-success btn-lg mt-4" name="button-sign">Sign In</button>
+          </a>
+        </form>
+        <p class="my-2">Or</p>
+        <a href="#.html" target="_self" style="color:#FFF">
+          <button type="button" class="btn btn-outline-success" name="button-sign">Create Account</button>
+        </a>
+      </div>
+    </div><!--end card-->
+    </div>
+
+  </div>
+
+  <div class="d-flex">
+    <a href="login.html" style="color:#FFF">
+      <button type="button" class="btn btn-danger mx-2" name="back">Back</button>
+    </a>
+</div>
+
+
+  </body>
+</html>

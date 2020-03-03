@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style media="screen">
+      button {
+        align-items: flex-start;
+      }
+
+      .container{
+        flex-wrap: nowrap
+      }
+    </style>
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-nav nav nav-fill w-100">
+            <li class="nav-item">
+              <a class="nav-link link-odd" href="profile.html" id="top-button">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-even" href="review.html" target="_self">Write a Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-odd" href="notifications.html">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-even" href="login.html" id="bottom-button">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark static-top">
+        <div>
+          <div class="links-hamburger">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="search-box">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success my-2 my-sm-0 search-button" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="review-button-div">
+          <a href="review.html" target="_self" style="color:#FFF">
+          <button type="button" class="btn btn-info" name="button-review">
+          Write a Review</button>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row my-4"> <!-- start row-->
+      <div class="col-sm mx-2">
+        <img src="profilepic.png" class="rounded float-left mr-2" alt="profilepic" height="150px" width="150px">
+        <div class="d-inline-block">
+        <h2>John Smith</h2> <!--name of driver-->
+        </div>
+        <div class="d-inline-block">
+          <h4 style="color: #666">(Handle)</h4> <!--driver handle-->
+        </div>
+          <h4>4 review(s)</h4> <!-- # reviews by driver-->
+      </div>
+    </div> <!-- end row-->
+
+    <div class="row"> <!-- start row-->
+      <div class="col-sm mx-2">
+      <h3>All Reviews</h3>
+      <select class="form-control w-auto" for="focused-input">
+           <option>Sort by: </option>
+           <option value="">Highest Rated</option>
+           <option value="">Most Recent</option>
+           <option value="">Most Visited</option>
+      </select>
+
+      <!--
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Sort by:</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item"href="#">Highest Rated</a>
+          <a class="dropdown-item"href="#">Most Visited</a>
+          <a class="dropdown-item"href="#">Most Recent</a>
+        </div>
+      </div>
+    -->
+      </div>
+    </div> <!--end row-->
+
+    <div class="row my-2 mx-2">
+      <div class="col-sm mx-1">
+        <div class="card my-4" style="width: 16rem;"> <!--card-->
+          <div class="card-header">
+            <h4 class="card-title">Harris Teeter</h4>
+            <p class="card-title">44 Monarch Dr, Waynesboro, VA 22980</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+          </div>
+          <img class="card-img-top" src="dock1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">
+              Easy parking there. Already had an appointment.
+            </p>
+            <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">Total time: 2 hours<span class="glyphicon glyphicon-ok-sign">
+                </span></li>
+                <li class="list-group-item">Driver break room</li>
+                <li class="list-group-item">Restrooms</li>
+              </ul>
+            <a href="full-review1.html" class="btn btn-success">Full Review</a>
+          </div>
+        </div><!--end card-->
+
+      </div>
+      <div class="col-sm mx-1">
+        <div class="card my-4" style="width: 16rem;"> <!--card-->
+          <div class="card-header">
+            <h4 class="card-title">George's Foods</h4>
+            <p class="card-title">135 Mountain Lake Dr, Staunton, VA 24401</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+          </div>
+          <img class="card-img-top" src="dock1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">
+              Not much room to park and no breakroom. Couldn't reheat my chicken parm.
+            </p>
+            <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">Total time: 3 hours</li>
+                <li class="list-group-item">Restrooms</li>
+              </ul>
+            <a href="review1.html" class="btn btn-success">Full Review</a>
+          </div>
+        </div><!--end card-->
+      </div>
+
+
+        <div class="col-sm mx-1">
+          <div class="card my-4" style="width: 16rem;"> <!--card-->
+            <div class="card-header">
+              <h4 class="card-title">Target</h4>
+              <p class="card-title">2 Speckled Way, Harrisonburg, VA 22801</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <img class="card-img-top" src="dock1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                Easy parking. No appointment but no other drivers were there when I arrived.
+              </p>
+              <ul class="list-group list-group-flush mb-2">
+
+                  <li class="list-group-item">Total time: 1 hour<span class="glyphicon glyphicon-ok-sign">
+                  </span></li>
+                  <li class="list-group-item">Driver break room</li>
+                  <li class="list-group-item">Restrooms</li>
+                </ul>
+              <a href="#" class="btn btn-success">Full Review</a>
+            </div>
+          </div><!--end card-->
+        </div>
+
+    <div class="col-sm mx-1">
+      <div class="card my-4" style="width: 16rem;"> <!--card-->
+        <div class="card-header">
+          <h4 class="card-title">Value City Furniture</h4>
+          <p class="card-title">3436 Preston Hwy, Louisville, KY 40213</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <img class="card-img-top" src="dock1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">
+            Lots of room to turn around. Restrooms were clean, break room open 24/7. My appointment started late.
+          </p>
+          <ul class="list-group list-group-flush mb-2">
+
+              <li class="list-group-item">Total time: 2 hours<span class="glyphicon glyphicon-ok-sign">
+              </span></li>
+              <li class="list-group-item">Driver break room</li>
+              <li class="list-group-item">Restrooms</li>
+            </ul>
+          <a href="#" class="btn btn-success">Full Review</a>
+        </div>
+      </div><!--end card-->
+  </div> <!-- end row-->
+
+  <div class="row">
+    <footer class="page-footer fixed">
+      <!-- Footer Links -->
+        <div class="container text-sm">
+          <div class="row">
+            <div class="col-sm">
+              <h5 class="text-uppercase mt-4">Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#!">Link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        <div class="col-sm">
+          <div class="footer-copyright text-center py-2 text-bottom">© 2020 Copyright:
+            Road Stop
+          </div>
+        </div>
+    </div> <!--container-->
+    </footer>
+  </div>
+
+  </body>
+</html>
